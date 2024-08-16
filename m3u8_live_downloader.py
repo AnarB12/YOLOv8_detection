@@ -1,7 +1,7 @@
 """
 HTTP Live Streaming: https://datatracker.ietf.org/doc/html/rfc8216#autoid-56
 
-Here are my comments after reading through some of the concepts:
+Here are some of the concepts:
 
    - An M3U8 file is a playlist used in HTTP Live Streaming (HLS).
    - It contains references to video segments, which are small chunks 
@@ -19,7 +19,6 @@ Here are my comments after reading through some of the concepts:
      individual files.
    - It handles both direct segment URLs and variant playlists.
 
-I will continue to look in to this format further to understand it better.
 """
 
 
