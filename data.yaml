@@ -1,0 +1,21 @@
+# Train/val/test sets as 
+## 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+
+
+# path: /YOLOv8_model/Dataset  # dataset root dir
+
+train: C:/Users/banar/OneDrive/Desktop/YOLOv8_model/yolo_data/train/images  
+val: C:/Users/banar/OneDrive/Desktop/YOLOv8_model/yolo_data/valid/images 
+# test:  # test images (optional)
+
+# Classes
+nc: 7  # number of classes
+
+names: 
+- pedestrian
+- cyclist
+- motorcycle
+- car
+- bus
+- single-unit
+- trucks
