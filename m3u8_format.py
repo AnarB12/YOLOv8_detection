@@ -28,7 +28,7 @@ from urllib.parse import urljoin
 
 
 # URL to the master playlist
-m3u8_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM72/playlist.m3u8'
+m3u8_url = 'https://playlist.m3u8'
 response = requests.get(m3u8_url)
 if response.status_code != 200:
     print(f"Download failed. Status code: {response.status_code}")
@@ -65,9 +65,6 @@ if variant_url:
     lines = m3u8_content.splitlines()
 
 
-# Variant Playlist URL: https://s2.ozarkstrafficoneview.com:443/rtplive/CAM72/chunklist_w1724579266.m3u8
-# (It will update at each run and so will the segment URLs)
-
 # Variant Playlist INFO:
 # EXTM3U
 # EXT-X-VERSION:3
@@ -76,11 +73,11 @@ if variant_url:
 # EXT-X-DISCONTINUITY-SEQUENCE:47
 # Example Segments:
 # EXTINF:4.0,
-# Segment URL: https://s2.ozarkstrafficoneview.com:443/rtplive/CAM72/media_w1724579266_3140861.ts
+# Segment URL: https://media_1.ts
 # EXTINF:6.0,
-# Segment URL: https://s2.ozarkstrafficoneview.com:443/rtplive/CAM72/media_w1724579266_3140862.ts
+# Segment URL: https://media_2.ts
 # EXTINF:4.0,
-# Segment URL: https://s2.ozarkstrafficoneview.com:443/rtplive/CAM72/media_w1724579266_3140863.ts
+# Segment URL: https://media_3.ts
 
 
 # Directory to write and save the segments
