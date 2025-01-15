@@ -100,15 +100,8 @@ def record_stream(url, output_file='output.avi', codec='XVID', fps=20.0, duratio
 if __name__ == "__main__":
     setup_logging()
 
-    video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM72/playlist.m3u8'
-    # video_url = 'https://sfs04-traveler.modot.mo.gov:443/rtplive/MODOT_CAM_309/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM1017/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM45/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM64/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM104/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM128/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM126/playlist.m3u8'
-    # video_url = 'https://s2.ozarkstrafficoneview.com:443/rtplive/CAM52/playlist.m3u8'
+    video_url = 'playlist.m3u8'
+
 
 
     codec = 'XVID'
